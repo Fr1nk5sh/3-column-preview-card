@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca';
+    color: var(--Transparent-white);
+}
+
+.main-container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 5rem 0rem;
+}
+
+section {
+    padding: 3rem;
+    max-width: 21rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.section-1{
+    background-color: var(--Bright-orange);
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.section-2{
+    background-color: var(--Dark-cyan);
+}
+
+.section-3{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.heading {
+    color: var(--Very-light-gray);
+    font-size: 3rem;
+    font-family: 'Big Shoulders Display';
+    margin: 2rem 0rem;
+    font-weight: 700;
+}
+
+button {
+    display: block;
+    text-align: center;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    white-space: nowrap;
+}
+
+.button-1 {color: var(--Bright-orange);}
+
+.button-2 {color: var(--Dark-cyan);}
+
+.button-3 {color: var(--Very-dark-cyan);}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 45rem) {
+    .main-container {
+        display: flex;
+        flex-flow: row nowrap;
+        max-width: 60rem;
+    }
+
+    section {
+        max-width: 20rem;
+    }
+
+    .section-1{
+        border-radius: 0.5rem 0rem 0rem 0.5rem;
+    }
+
+    .section-3{
+        border-radius: 0rem 0.5rem 0.5rem 0rem;
+    }
+}
